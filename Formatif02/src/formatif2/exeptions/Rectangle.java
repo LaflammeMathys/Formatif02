@@ -8,7 +8,7 @@ public class Rectangle {
     public final String COULEUR_DEFAUT = "rouge";
     private int largeur;
     public static final int MIN_VAL = 1;
-    private String nom;
+    private static String nom;
     public static final int MAX_VAL = 30;
     public final String[] LES_COULEURS = {"rouge","vert","bleu","jaune","noir","orange"};
     private int hauteur;
@@ -17,7 +17,7 @@ public class Rectangle {
         setHauteur(hauteur);
         setLargeur(largeur);
         setCouleur(COULEUR_DEFAUT);
-        this.nom = COULEUR_DEFAUT;
+        this.nom = "Rectangle";
     }
 
     public int calculerSurface(){
@@ -77,7 +77,9 @@ public class Rectangle {
         couleur = couleur.trim();
         for (int i = 0; i < LES_COULEURS.length ; i++) {
            b = couleur.equalsIgnoreCase(LES_COULEURS[i]);
-
+           if (b){
+               return b;
+           }
         }
         return b;
     }
