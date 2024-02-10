@@ -69,21 +69,16 @@ class RectangleTest {
         assertEquals(r2.getCouleur(),"bleu");
     }
 
-    @Test
-    void setHauteur() {
-
-    }
-
 
     @Test
     void testToString() {
+        assertEquals(r1.toString(),"Rectangle rouge 5,5");
+
+        asser
     }
 
     @Test
     void testEquals() {
     }
 
-    @Test
-    void setLargeur() {
-    }
 }
