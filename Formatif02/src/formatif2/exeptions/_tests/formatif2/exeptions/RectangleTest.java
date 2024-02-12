@@ -74,11 +74,17 @@ class RectangleTest {
     void testToString() {
         assertEquals(r1.toString(),"Rectangle rouge 5,5");
 
-        asser
     }
 
     @Test
     void testEquals() {
+        assertTrue(r2.equals(new Rectangle(5,7)));
+        assertFalse(rMAX.equals(rMIN));
+        assertFalse(rMAX.equals(rnull));
+        r2.setCouleur("bleu");
+        assertFalse(r2.equals(new Rectangle(7,5)));
+        assertTrue(new Rectangle(10,3).equals(new Rectangle(6,5)));
+
     }
 
 }

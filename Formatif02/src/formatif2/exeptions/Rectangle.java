@@ -1,6 +1,5 @@
 package formatif2.exeptions;
 
-import java.util.Arrays;
 import java.util.Objects;
 
 public class Rectangle {
