@@ -1,5 +1,5 @@
-package formatif2.exeptions;
-
+import formatif2.exeptions.FormeExeption;
+import formatif2.formes.Cercle;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -106,4 +106,5 @@ class CercleTest {
         assertEquals(6,cMIN.calculerPerimetre());
         assertEquals(188,cMAX.calculerPerimetre());
     }
+
 }

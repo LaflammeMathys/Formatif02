@@ -1,5 +1,5 @@
-package formatif2.exeptions;
-
+import formatif2.exeptions.FormeExeption;
+import formatif2.formes.Rectangle;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -63,7 +63,7 @@ class RectangleTest {
     @Test
     void estCouleurApprouveSeulementDesCouleursValdie() {
         assertThrows(FormeExeption.class, () -> {
-            r1.setCouleur("noir");
+            r1.setCouleur("magenta");
         });
         r2.setCouleur("bleu");
         assertEquals(r2.getCouleur(),"bleu");

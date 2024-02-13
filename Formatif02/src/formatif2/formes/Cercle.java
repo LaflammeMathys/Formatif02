@@ -1,7 +1,12 @@
-package formatif2.exeptions;
+package formatif2.formes;
+
+import formatif2.exeptions.FormeExeption;
 
 import java.util.Objects;
+
+
     /*
+
     Cercle est composé d'un rayon situé entre 1 et 30 inclusivement,d'une des couleurs suivantes
     (rouge,vert,bleu,jaune,noir,orange) avec vert comme couleur de base et d'un nom défénie par default comme
     étant Cercle.
