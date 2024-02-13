@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CercleTest {
+    private Cercle c;
 
     private Cercle c1 ;
 
@@ -19,6 +20,7 @@ class CercleTest {
     }
 
     private void init() {
+        c = new Cercle();
         c1 = new Cercle(5);
         c2 = new Cercle(7);
         cnull = null;
